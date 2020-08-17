@@ -65,7 +65,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/j6lte/proprietary/vendor/etc/wifi/nvram.txt_36:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/nvram.txt_36 \
     vendor/samsung/j6lte/proprietary/vendor/firmware/bcm43436B0_V0086.0137.hcd:$(TARGET_COPY_OUT_VENDOR)/firmware/bcm43436B0_V0086.0137.hcd \
     vendor/samsung/j6lte/proprietary/vendor/firmware/fimc_is_lib.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fimc_is_lib.bin \
-    vendor/samsung/j6lte/proprietary/vendor/firmware/mfc_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mfc_fw.bin \
     vendor/samsung/j6lte/proprietary/vendor/firmware/nfc/sec_s3nrn81_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/nfc/sec_s3nrn81_firmware.bin \
     vendor/samsung/j6lte/proprietary/vendor/firmware/setfile_3l2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_3l2.bin \
     vendor/samsung/j6lte/proprietary/vendor/firmware/setfile_4h5yc.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_4h5yc.bin \
