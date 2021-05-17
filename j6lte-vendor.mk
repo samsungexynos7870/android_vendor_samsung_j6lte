@@ -92,11 +92,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/j6lte/proprietary/_gps/lib/hw/gps.default.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/gps.default.so \
     vendor/samsung/j6lte/proprietary/_gps/vendor/bin/hw/gpsd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/gpsd
 
-# Sensors - from T580XXS5CTK1/T580XXS5CTD1
+# Sensors - from j6
 PRODUCT_COPY_FILES += \
     vendor/samsung/j6lte/proprietary/_sensors/vendor/lib/hw/sensors.universal7870.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sensors.universal7870.so
 
-# Samsung stock audio
+# Samsung stock audio - from T580XXU3BRF1/j6
 PRODUCT_COPY_FILES += \
     vendor/samsung/j6lte/proprietary/_audio/hw/audio.primary.universal7870.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.universal7870.so \
     vendor/samsung/j6lte/proprietary/_audio/lib_SamsungRec_06004.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_SamsungRec_06004.so \
