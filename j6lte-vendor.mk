@@ -82,7 +82,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/j6lte/proprietary/system_ext/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libaptX_encoder.so \
     vendor/samsung/j6lte/proprietary/system_ext/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libaptXHD_encoder.so
 
-# GPS - from T580XXS5CTK1/T580XXS5CTD1
+# GPS - from T580XXS5CTK1/T580XXS5CTD1/J600FN
 # Modifications made to gpsd to get it to work:
 #  * SSLv3_client_method has been replaced with SSLv23_method:
 #  $ sed -i "s/SSLv3_client_method/SSLv23_method\x00\x00\x00\x00\x00\x00/" gpsd
