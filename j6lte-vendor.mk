@@ -19,10 +19,11 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Firmware - from J600FN
 PRODUCT_COPY_FILES += \
-    vendor/samsung/j6lte/proprietary/etc/firmware/fimc_is_lib.bin:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/fimc_is_lib.bin \
-    vendor/samsung/j6lte/proprietary/etc/firmware/setfile_3l2.bin:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/setfile_3l2.bin \
-    vendor/samsung/j6lte/proprietary/etc/firmware/bcm43436B0_V0096.0155.hcd$(TARGET_COPY_OUT_VENDOR)/etc/firmware/bcm43436B0_V0096.0155.hcd \
-    vendor/samsung/j6lte/proprietary/etc/firmware/setfile_4h5yc.bin:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/setfile_4h5yc.bin 
+    vendor/samsung/j6lte/proprietary/etc/firmware/fimc_is_lib.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fimc_is_lib.bin \
+    vendor/samsung/j6lte/proprietary/etc/firmware/setfile_3l2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_3l2.bin \
+    vendor/samsung/j6lte/proprietary/etc/firmware/bcm43436B0_V0096.0155.hcd$(TARGET_COPY_OUT_VENDOR)/firmware/bcm43436B0_V0096.0155.hcd \
+    vendor/samsung/j6lte/proprietary/etc/firmware/setfile_4h5yc.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_4h5yc.bin \
+    vendor/samsung/j6lte/proprietary/etc/firmware/nfc/sec_s3nrn81_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/nfc/sec_s3nrn81_firmware.bin 
 
 
 # MFC (Multi Format Codec) firmware - from M105FDDU3CTK3
@@ -116,8 +117,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/j6lte/proprietary/_audio/libLifevibes_lvvetx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libLifevibes_lvvetx.so
 
 # wcnss_filter - for Bluetooth - from the stock 7.1.1 firmware - T580XXU3BRF1
-PRODUCT_COPY_FILES += \
-    vendor/samsung/j6lte/proprietary/vendor/bin/wcnss_filter:$(TARGET_COPY_OUT_VENDOR)/bin/wcnss_filter
+# PRODUCT_COPY_FILES += \
+    # vendor/samsung/j6lte/proprietary/vendor/bin/wcnss_filter:$(TARGET_COPY_OUT_VENDOR)/bin/wcnss_filter
 
 # Create Mali symlinks for Vulkan and OpenCL
 PRODUCT_PACKAGES += libGLES_mali
