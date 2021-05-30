@@ -61,7 +61,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/j6lte/proprietary/lib64/omx/libOMX.Exynos.VP8.Encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/omx/libOMX.Exynos.VP8.Encoder.so \
     vendor/samsung/j6lte/proprietary/lib64/omx/libOMX.Exynos.WMV.Decoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/omx/libOMX.Exynos.WMV.Decoder.so
 
-# Camera - from T580XXS5CTK1/T580XXS5CTD1/J600FN
+# Camera - from J600FN
 # camera.vendor.universal7870.so was taken directly from /system/lib/hw/camera.exynos7870.so
 PRODUCT_COPY_FILES += \
     vendor/samsung/j6lte/proprietary/lib/hw/camera.vendor.universal7870.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/camera.vendor.universal7870.so \
@@ -74,7 +74,6 @@ PRODUCT_COPY_FILES += \
 # DRM - from "crosshatch-user 11 RQ1A.201205.003 6906706 release-keys"
 PRODUCT_COPY_FILES += \
     vendor/samsung/j6lte/proprietary/vendor/lib64/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwvhidl.so \
-    vendor/samsung/j6lte/proprietary/vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
     vendor/samsung/j6lte/proprietary/vendor/bin/hw/android.hardware.drm@1.3-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.3-service.widevine
 
 # aptX - from "crosshatch-user 11 RQ1A.201205.003 6906706 release-keys"
@@ -82,7 +81,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/j6lte/proprietary/system_ext/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libaptX_encoder.so \
     vendor/samsung/j6lte/proprietary/system_ext/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libaptXHD_encoder.so
 
-# GPS - from T580XXS5CTK1/T580XXS5CTD1/J600FN
+# GPS - from J600FN
 # Modifications made to gpsd to get it to work:
 #  * SSLv3_client_method has been replaced with SSLv23_method:
 #  $ sed -i "s/SSLv3_client_method/SSLv23_method\x00\x00\x00\x00\x00\x00/" gpsd
@@ -116,9 +115,91 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/j6lte/proprietary/_audio/libLifevibes_lvverx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libLifevibes_lvverx.so \
     vendor/samsung/j6lte/proprietary/_audio/libLifevibes_lvvetx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libLifevibes_lvvetx.so
 
-# wcnss_filter - for Bluetooth - from the stock 7.1.1 firmware - T580XXU3BRF1
-# PRODUCT_COPY_FILES += \
-    # vendor/samsung/j6lte/proprietary/vendor/bin/wcnss_filter:$(TARGET_COPY_OUT_VENDOR)/bin/wcnss_filter
+# Fingerprint from J600FN
+PRODUCT_COPY_FILES += \
+    vendor/samsung/j6lte/proprietary/_fingerprint/app/mcRegistry/00060308060501020000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/00060308060501020000000000000000.tlbin \
+    vendor/samsung/j6lte/proprietary/_fingerprint/app/mcRegistry/07010000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/07010000000000000000000000000000.tlbin \
+    vendor/samsung/j6lte/proprietary/_fingerprint/app/mcRegistry/07060000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/07060000000000000000000000000000.tlbin \
+    vendor/samsung/j6lte/proprietary/_fingerprint/app/mcRegistry/08130000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/08130000000000000000000000000000.tlbin \
+    vendor/samsung/j6lte/proprietary/_fingerprint/app/mcRegistry/FFFFFFFF000000000000000000000001.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/FFFFFFFF000000000000000000000001.drbin \
+    vendor/samsung/j6lte/proprietary/_fingerprint/app/mcRegistry/ffffffff000000000000000000000005.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffff000000000000000000000005.tlbin \
+    vendor/samsung/j6lte/proprietary/_fingerprint/app/mcRegistry/ffffffff00000000000000000000000a.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffff00000000000000000000000a.tlbin \
+    vendor/samsung/j6lte/proprietary/_fingerprint/app/mcRegistry/ffffffff00000000000000000000000b.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffff00000000000000000000000b.tlbin \
+    vendor/samsung/j6lte/proprietary/_fingerprint/app/mcRegistry/ffffffff00000000000000000000000c.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffff00000000000000000000000c.tlbin \
+    vendor/samsung/j6lte/proprietary/_fingerprint/app/mcRegistry/ffffffff00000000000000000000000d.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffff00000000000000000000000d.tlbin \
+    vendor/samsung/j6lte/proprietary/_fingerprint/app/mcRegistry/ffffffff00000000000000000000000f.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffff00000000000000000000000f.tlbin \
+    vendor/samsung/j6lte/proprietary/_fingerprint/app/mcRegistry/ffffffff000000000000000000000012.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffff000000000000000000000012.tlbin \
+    vendor/samsung/j6lte/proprietary/_fingerprint/app/mcRegistry/ffffffff000000000000000000000013.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffff000000000000000000000013.tlbin \
+    vendor/samsung/j6lte/proprietary/_fingerprint/app/mcRegistry/ffffffff000000000000000000000016.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffff000000000000000000000016.tlbin \
+    vendor/samsung/j6lte/proprietary/_fingerprint/app/mcRegistry/ffffffff000000000000000000000017.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffff000000000000000000000017.tlbin \
+    vendor/samsung/j6lte/proprietary/_fingerprint/app/mcRegistry/ffffffff000000000000000000000019.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffff000000000000000000000019.tlbin \
+    vendor/samsung/j6lte/proprietary/_fingerprint/app/mcRegistry/ffffffff00000000000000000000002e.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffff00000000000000000000002e.tlbin \
+    vendor/samsung/j6lte/proprietary/_fingerprint/app/mcRegistry/ffffffff00000000000000000000002f.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffff00000000000000000000002f.tlbin \
+    vendor/samsung/j6lte/proprietary/_fingerprint/app/mcRegistry/ffffffff000000000000000000000030.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffff000000000000000000000030.tlbin \
+    vendor/samsung/j6lte/proprietary/_fingerprint/app/mcRegistry/ffffffff000000000000000000000038.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffff000000000000000000000038.tlbin \
+    vendor/samsung/j6lte/proprietary/_fingerprint/app/mcRegistry/ffffffff00000000000000000000003e.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffff00000000000000000000003e.tlbin \
+    vendor/samsung/j6lte/proprietary/_fingerprint/app/mcRegistry/ffffffff000000000000000000000041.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffff000000000000000000000041.tlbin \
+    vendor/samsung/j6lte/proprietary/_fingerprint/app/mcRegistry/ffffffff000000000000000000000045.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffff000000000000000000000045.tlbin \
+    vendor/samsung/j6lte/proprietary/_fingerprint/app/mcRegistry/ffffffff000000000000000000000059.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffff000000000000000000000059.tlbin \
+    vendor/samsung/j6lte/proprietary/_fingerprint/app/mcRegistry/ffffffff000000000000000000000060.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffff000000000000000000000060.tlbin \
+    vendor/samsung/j6lte/proprietary/_fingerprint/app/mcRegistry/ffffffff000000000000000000000073.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffff000000000000000000000073.tlbin \
+    vendor/samsung/j6lte/proprietary/_fingerprint/app/mcRegistry/ffffffff000000000000000000000077.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffff000000000000000000000077.tlbin \
+    vendor/samsung/j6lte/proprietary/_fingerprint/app/mcRegistry/ffffffffd00000000000000000000014.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffffd00000000000000000000014.tlbin \
+    vendor/samsung/j6lte/proprietary/_fingerprint/app/mcRegistry/ffffffffd0000000000000000000000a.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffffd0000000000000000000000a.tlbin \
+    vendor/samsung/j6lte/proprietary/_fingerprint/app/mcRegistry/ffffffffd0000000000000000000000e.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffffd0000000000000000000000e.tlbin \
+    vendor/samsung/j6lte/proprietary/_fingerprint/app/mcRegistry/ffffffffd00000000000000000000016.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffffd00000000000000000000016.tlbin \
+    vendor/samsung/j6lte/proprietary/_fingerprint/app/mcRegistry/ffffffffd00000000000000000000062.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffffd00000000000000000000062.tlbin \
+    vendor/samsung/j6lte/proprietary/_fingerprint/bin/mcDriverDaemon:$(TARGET_COPY_OUT_VENDOR)/bin/mcDriverDaemon \
+    vendor/samsung/j6lte/proprietary/_fingerprint/lib/libMcClient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMcClient.so \
+    vendor/samsung/j6lte/proprietary/_fingerprint/lib/libMcRegistry.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMcRegistry.so \
+    vendor/samsung/j6lte/proprietary/_fingerprint/lib/libbauthserver.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbauthserver.so \
+    vendor/samsung/j6lte/proprietary/_fingerprint/lib/libbauthzcommon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbauthzcommon.so \
+    vendor/samsung/j6lte/proprietary/_fingerprint/lib/libegis_fp_normal_sensor_test.so:$(TARGET_COPY_OUT_VENDOR)/lib/libegis_fp_normal_sensor_test.so \
+    vendor/samsung/j6lte/proprietary/_fingerprint/lib/libgf_in_system_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgf_in_system_lib.so \
+    vendor/samsung/j6lte/proprietary/_fingerprint/lib/libqfp_sensortest.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqfp_sensortest.so \
+    vendor/samsung/j6lte/proprietary/_fingerprint/lib/libsynaFpSensorTestNwd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsynaFpSensorTestNwd.so
+
+# RIL - from M305MUBU2BSH4
+PRODUCT_COPY_FILES += \
+    vendor/samsung/j6lte/proprietary/_ril/lib64/libsec_vaultkeeper_serverHal.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsec_vaultkeeper_serverHal.so \
+    vendor/samsung/j6lte/proprietary/_ril/lib64/libsec-ril.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsec-ril.so \
+    vendor/samsung/j6lte/proprietary/_ril/lib64/libsec-ril-dsds.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsec-ril-dsds.so \
+    vendor/samsung/j6lte/proprietary/_ril/lib64/vendor.samsung.hardware.radio.channel@1.0_vendor.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.samsung.hardware.radio.channel@1.0_vendor.so \
+    vendor/samsung/j6lte/proprietary/_ril/lib64/vendor.samsung.security.vaultkeeper_server@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.samsung.security.vaultkeeper_server@1.0.so \
+    vendor/samsung/j6lte/proprietary/_ril/vendor/bin/hw/rild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/rild \
+    vendor/samsung/j6lte/proprietary/_ril/vendor/etc/plmn_delta.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta.bin \
+    vendor/samsung/j6lte/proprietary/_ril/vendor/etc/plmn_delta_hktw.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_hktw.bin \
+    vendor/samsung/j6lte/proprietary/_ril/vendor/etc/plmn_se13.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_se13.bin \
+    vendor/samsung/j6lte/proprietary/_ril/vendor/lib64/libreference-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libreference-ril.so \
+    vendor/samsung/j6lte/proprietary/_ril/vendor/lib64/libril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril.so \
+    vendor/samsung/j6lte/proprietary/_ril/vendor/lib64/librilutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librilutils.so \
+    vendor/samsung/j6lte/proprietary/_ril/vendor/lib64/vendor.samsung.hardware.radio.channel@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio.channel@1.0_vendor.so \
+    vendor/samsung/j6lte/proprietary/_ril/vendor/lib64/vendor.samsung.hardware.radio.configsvc@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio.configsvc@1.0_vendor.so \
+    vendor/samsung/j6lte/proprietary/_ril/vendor/lib64/vendor.samsung.hardware.radio.secbridge@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio.secbridge@1.0_vendor.so \
+    vendor/samsung/j6lte/proprietary/_ril/vendor/lib64/vendor.samsung.hardware.radio.sechook@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio.sechook@1.0_vendor.so \
+    vendor/samsung/j6lte/proprietary/_ril/vendor/lib64/vendor.samsung.hardware.radio@1.2_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio@1.2_vendor.so
+
+# Audio amplifier
+PRODUCT_COPY_FILES += \
+    vendor/samsung/j6lte/proprietary/lib/libtfa98xx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtfa98xx.so \
+    vendor/samsung/j6lte/proprietary/vendor/etc/Tfa9896.cnt:$(TARGET_COPY_OUT_VENDOR)/etc/Tfa9896.cnt
+
+# Widevine L1 certification
+PRODUCT_COPY_FILES += \
+    vendor/samsung/j6lte/proprietary/vendor/lib/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboemcrypto.so 
+
+# Bluetooth - from A320FLXXS9CTK2/J600FN
+PRODUCT_COPY_FILES += \
+    vendor/samsung/a3y17lte/proprietary/lib/libantradio.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libantradio.so \
+    vendor/samsung/a3y17lte/proprietary/lib/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/com.qualcomm.qti.ant@1.0.so \
+    vendor/samsung/a3y17lte/proprietary/lib/vendor.samsung.hardware.bluetooth@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.samsung.hardware.bluetooth@1.0.so \
+    vendor/samsung/a3y17lte/proprietary/lib64/libantradio.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libantradio.so \
+    vendor/samsung/a3y17lte/proprietary/lib64/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/com.qualcomm.qti.ant@1.0.so \
+    vendor/samsung/a3y17lte/proprietary/lib64/vendor.samsung.hardware.bluetooth@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.samsung.hardware.bluetooth@1.0.so \
+    vendor/samsung/a3y17lte/proprietary/vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/com.qualcomm.qti.ant@1.0-impl.so \
+    vendor/samsung/a3y17lte/proprietary/vendor/lib/hw/android.hardware.bluetooth@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth@1.0-impl.so \
+    vendor/samsung/a3y17lte/proprietary/vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so \
+    vendor/samsung/a3y17lte/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth@1.0-impl.so
 
 # Create Mali symlinks for Vulkan and OpenCL
 PRODUCT_PACKAGES += libGLES_mali
