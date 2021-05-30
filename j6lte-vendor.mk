@@ -96,6 +96,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/samsung/j6lte/proprietary/_sensors/vendor/lib/hw/sensors.universal7870.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sensors.universal7870.so
 
+# NFC - from A520FXXUGCTI9
+PRODUCT_COPY_FILES += \
+    vendor/samsung/j6lte/proprietary/lib64/vendor.samsung.hardware.nfc@2.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.samsung.hardware.nfc@2.0.so \
+    vendor/samsung/j6lte/proprietary/vendor/bin/hw/sec.android.hardware.nfc@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/sec.android.hardware.nfc@1.2-service \
+    vendor/samsung/j6lte/proprietary/vendor/etc/nfc/sec_s3nrn81_rfreg.bin:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/sec_s3nrn81_firmware.bin \
+    vendor/samsung/j6lte/proprietary/vendor/etc/nfc/sec_s3nrn81_rfreg.fl:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/sec_s3nrn81_firmware.fl \
+    vendor/samsung/j6lte/proprietary/vendor/lib64/nfc_nci_sec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/nfc_nci_sec.so
+
 # Samsung stock audio - from T580XXU3BRF1/J600FN
 PRODUCT_COPY_FILES += \
     vendor/samsung/j6lte/proprietary/_audio/hw/audio.primary.universal7870.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.universal7870.so \
