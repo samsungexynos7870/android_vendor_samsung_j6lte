@@ -198,16 +198,16 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth - from A320FLXXS9CTK2/J600FN
 PRODUCT_COPY_FILES += \
-    vendor/samsung/a3y17lte/proprietary/lib/libantradio.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libantradio.so \
-    vendor/samsung/a3y17lte/proprietary/lib/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/com.qualcomm.qti.ant@1.0.so \
-    vendor/samsung/a3y17lte/proprietary/lib/vendor.samsung.hardware.bluetooth@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.samsung.hardware.bluetooth@1.0.so \
-    vendor/samsung/a3y17lte/proprietary/lib64/libantradio.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libantradio.so \
-    vendor/samsung/a3y17lte/proprietary/lib64/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/com.qualcomm.qti.ant@1.0.so \
-    vendor/samsung/a3y17lte/proprietary/lib64/vendor.samsung.hardware.bluetooth@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.samsung.hardware.bluetooth@1.0.so \
-    vendor/samsung/a3y17lte/proprietary/vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/com.qualcomm.qti.ant@1.0-impl.so \
-    vendor/samsung/a3y17lte/proprietary/vendor/lib/hw/android.hardware.bluetooth@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth@1.0-impl.so \
-    vendor/samsung/a3y17lte/proprietary/vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so \
-    vendor/samsung/a3y17lte/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth@1.0-impl.so
+    vendor/samsung/j6lte/proprietary/lib/libantradio.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libantradio.so \
+    vendor/samsung/j6lte/proprietary/lib/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/com.qualcomm.qti.ant@1.0.so \
+    vendor/samsung/j6lte/proprietary/lib/vendor.samsung.hardware.bluetooth@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.samsung.hardware.bluetooth@1.0.so \
+    vendor/samsung/j6lte/proprietary/lib64/libantradio.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libantradio.so \
+    vendor/samsung/j6lte/proprietary/lib64/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/com.qualcomm.qti.ant@1.0.so \
+    vendor/samsung/j6lte/proprietary/lib64/vendor.samsung.hardware.bluetooth@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.samsung.hardware.bluetooth@1.0.so \
+    vendor/samsung/j6lte/proprietary/vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/com.qualcomm.qti.ant@1.0-impl.so \
+    vendor/samsung/j6lte/proprietary/vendor/lib/hw/android.hardware.bluetooth@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth@1.0-impl.so \
+    vendor/samsung/j6lte/proprietary/vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so \
+    vendor/samsung/j6lte/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth@1.0-impl.so
 
 # Create Mali symlinks for Vulkan and OpenCL
 PRODUCT_PACKAGES += libGLES_mali
