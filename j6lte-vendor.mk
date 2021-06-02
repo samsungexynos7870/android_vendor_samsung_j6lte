@@ -21,7 +21,7 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     vendor/samsung/j6lte/proprietary/etc/firmware/fimc_is_lib.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fimc_is_lib.bin \
     vendor/samsung/j6lte/proprietary/etc/firmware/setfile_3l2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_3l2.bin \
-    vendor/samsung/j6lte/proprietary/etc/firmware/bcm43436B0_V0096.0155.hcd$(TARGET_COPY_OUT_VENDOR)/firmware/bcm43436B0_V0096.0155.hcd \
+    vendor/samsung/j6lte/proprietary/etc/firmware/bcm43436B0_V0096.0155.hcd:$(TARGET_COPY_OUT_VENDOR)/firmware/bcm43436B0_V0096.0155.hcd \
     vendor/samsung/j6lte/proprietary/etc/firmware/setfile_4h5yc.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_4h5yc.bin \
     vendor/samsung/j6lte/proprietary/etc/firmware/nfc/sec_s3nrn81_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/nfc/sec_s3nrn81_firmware.bin 
 
