@@ -19,7 +19,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/j6lte/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.0-service \
     vendor/samsung/j6lte/proprietary/vendor/bin/hw/android.hardware.sensors@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.sensors@1.0-service \
     vendor/samsung/j6lte/proprietary/vendor/bin/hw/sec.android.hardware.nfc@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/sec.android.hardware.nfc@1.2-service \
-    vendor/samsung/j6lte/proprietary/vendor/etc/Tfa9896.cnt:$(TARGET_COPY_OUT_VENDOR)/etc/Tfa9896.cnt \
     vendor/samsung/j6lte/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service.samsung.rc \
     vendor/samsung/j6lte/proprietary/vendor/etc/init/sec.android.hardware.nfc@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/sec.android.hardware.nfc@1.2-service.rc \
     vendor/samsung/j6lte/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
@@ -50,3 +49,23 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/j6lte/proprietary/vendor/lib/vendor.samsung.hardware.bluetooth@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.bluetooth@2.0.so \
     vendor/samsung/j6lte/proprietary/vendor/lib64/nfc_nci_sec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/nfc_nci_sec.so \
     vendor/samsung/j6lte/proprietary/vendor/lib64/vendor.samsung.hardware.nfc@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.nfc@2.0.so
+
+# TFA-Audio from m10lte
+PRODUCT_COPY_FILES += \
+    vendor/samsung/j6lte/proprietary/vendor/etc/Tfa9896.cnt:$(TARGET_COPY_OUT_VENDOR)/etc/Tfa9896.cnt \
+    vendor/samsung/universal7870-common/proprietary/audio/m10lte/lib/libaudio-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudio-ril.so \
+    vendor/samsung/universal7870-common/proprietary/audio/m10lte/lib/libaudioroute.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioroute.so \
+    vendor/samsung/universal7870-common/proprietary/audio/m10lte/lib/libLifevibes_lvverx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libLifevibes_lvverx.so \
+    vendor/samsung/universal7870-common/proprietary/audio/m10lte/lib/libLifevibes_lvvetx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libLifevibes_lvvetx.so \
+    vendor/samsung/universal7870-common/proprietary/audio/m10lte/lib/libpreprocessing_nxp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpreprocessing_nxp.so \
+    vendor/samsung/universal7870-common/proprietary/audio/m10lte/lib/librecordalive.so:$(TARGET_COPY_OUT_VENDOR)/lib/librecordalive.so \
+    vendor/samsung/universal7870-common/proprietary/audio/m10lte/lib/libsamsungDiamondVoice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsamsungDiamondVoice.so \
+    vendor/samsung/universal7870-common/proprietary/audio/m10lte/lib/libSamsungPostProcessConvertor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSamsungPostProcessConvertor.so \
+    vendor/samsung/universal7870-common/proprietary/audio/m10lte/lib/lib_SamsungRec_06006.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_SamsungRec_06006.so \
+    vendor/samsung/universal7870-common/proprietary/audio/m10lte/lib/libsecaudioinfo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecaudioinfo.so \
+    vendor/samsung/universal7870-common/proprietary/audio/m10lte/lib/lib_soundaliveresampler.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_soundaliveresampler.so \
+    vendor/samsung/universal7870-common/proprietary/audio/m10lte/lib/lib_SoundAlive_SRC384_ver320.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_SoundAlive_SRC384_ver320.so \
+    vendor/samsung/universal7870-common/proprietary/audio/m10lte/lib/libtinyalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinyalsa.so \
+    vendor/samsung/universal7870-common/proprietary/audio/m10lte/lib/libtfa98xx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtfa98xx.so \
+    vendor/samsung/universal7870-common/proprietary/audio/m10lte/lib/libvndsecril-client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvndsecril-client.so \
+    vendor/samsung/universal7870-common/proprietary/audio/m10lte/lib/hw/audio.primary.universal7870.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.universal7870.so 
